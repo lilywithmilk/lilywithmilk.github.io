@@ -117,6 +117,72 @@
       color: var(--text-secondary);
     }
 
+    .production {
+      margin-top: 24px;
+      padding: 18px 18px 16px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      text-align: left;
+      background: #fcfcfc;
+    }
+
+    .production-label {
+      margin: 0 0 6px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .production-title {
+      display: block;
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .production-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 10px;
+      padding: 12px 14px;
+      border: 1px solid #e5e5e5;
+      border-radius: 14px;
+      background: #ffffff;
+      border-bottom: none;
+    }
+
+    .production-image {
+      width: 64px;
+      height: 64px;
+      flex: 0 0 64px;
+      border-radius: 16px;
+      object-fit: cover;
+      background: #f4f4f4;
+    }
+
+    .production-copy {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .production-meta {
+      display: block;
+      margin: 4px 0 0;
+      font-size: 0.84rem;
+      color: var(--text-muted);
+    }
+
+    .production-cta {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      white-space: nowrap;
+    }
+
     .contact {
       margin-top: 18px;
       font-size: 0.84rem;
@@ -158,6 +224,35 @@
         line-height: 1.62;
       }
 
+      .production {
+        margin-top: 20px;
+        padding: 16px 14px 14px;
+      }
+
+      .production-title {
+        font-size: 1rem;
+      }
+
+      .production-card {
+        gap: 12px;
+        padding: 12px;
+      }
+
+      .production-image {
+        width: 56px;
+        height: 56px;
+        flex-basis: 56px;
+        border-radius: 14px;
+      }
+
+      .production-meta {
+        font-size: 0.8rem;
+      }
+
+      .production-cta {
+        font-size: 0.76rem;
+      }
+
       .contact {
         margin-top: 14px;
         font-size: 0.78rem;
@@ -187,6 +282,28 @@
     <h1>Lily with Milk</h1>
     <h2>Developer Page</h2>
     <p>We build apps and games with care, simplicity, and delightful user experiences.</p>
+    <section class="production" aria-label="Released product">
+      <p class="production-label">Released Product</p>
+      <a
+        class="production-card"
+        href="https://play.google.com/store/apps/details?id=com.lilywithmilk.what_todo_today"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="production-image"
+          src="https://play-lh.googleusercontent.com/pP2RXI_NMvJg0x8PfHwS7-L1bQX8j-PrDd_j7PplWywMB-mk5mGUUBWMPzs0srU7-SaIbooQTKaYpaZ53uCBtxY"
+          alt="What To Do Today? 앱 이미지"
+          loading="lazy"
+          referrerpolicy="no-referrer"
+        />
+        <span class="production-copy">
+          <span class="production-title">What To Do Today?</span>
+          <span class="production-meta">View on Google Play</span>
+        </span>
+        <span class="production-cta">Open</span>
+      </a>
+    </section>
     <div class="contact">
       Contact: <a href="mailto:lilywithmilk@gmail.com">lilywithmilk@gmail.com</a>
     </div>
